@@ -2,8 +2,8 @@
 
 这个仓库已经按你的目标整理好了：
 
-- OpenClaw：默认安装 npm 稳定版 `2026.4.12`
-- OpenViking：安装 PyPI 版 `0.3.6`
+- OpenClaw：默认安装 npm 稳定版 `2026.4.14`
+- OpenViking：安装 PyPI 版 `0.3.8`
 - OpenViking 插件：仓库内 `plugin/` 目录，来自官方 `examples/openclaw-plugin`
 - 模型提供方：火山方舟 / 豆包
 - 接入方式：**Local Mode**
@@ -54,7 +54,7 @@ bash scripts/00_check_requirements.sh
 bash scripts/10_install_openclaw_stable.sh
 ```
 
-它会把 OpenClaw 安装到 npm 稳定版 `2026.4.12`。
+它会把 OpenClaw 安装到 npm 稳定版 `2026.4.14`。
 
 然后执行：
 
@@ -87,7 +87,7 @@ bash scripts/20_install_openviking_local_doubao_prefilled.sh
 这个脚本会：
 
 - 创建 `~/.openviking/.venv`
-- 安装 `openviking==0.3.6`
+- 安装 `openviking==0.3.8`
 - 用豆包模板重写 `~/.openviking/ov.conf`
 - 安装仓库里的 `plugin/`
 - 把 `plugins.slots.contextEngine` 设置为 `openviking`

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-OPENCLAW_VERSION="${OPENCLAW_VERSION:-2026.4.12}"
+OPENCLAW_VERSION="${OPENCLAW_VERSION:-2026.4.14}"
 
 command -v npm >/dev/null 2>&1 || { echo "npm not found"; exit 1; }
 

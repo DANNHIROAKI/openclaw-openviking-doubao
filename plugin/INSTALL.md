@@ -60,7 +60,7 @@ npm install -g openclaw-openviking-setup-helper@latest && ov-install -y
 To install or upgrade to a specific release:
 
 ```bash
-ov-install -y --version 0.2.9
+ov-install -y --version 0.3.8
 ```
 
 ## Parameters
@@ -68,7 +68,7 @@ ov-install -y --version 0.2.9
 | Parameter | Meaning |
 | --- | --- |
 | `--workdir PATH` | Target OpenClaw data directory |
-| `--version VER` | Set both plugin version and OpenViking version. For example, `0.2.9` maps to plugin `v0.2.9` |
+| `--version VER` | Set both plugin version and OpenViking version. For example, `0.3.8` maps to plugin `v0.3.8` |
 | `--current-version` | Print the currently installed plugin version and OpenViking version |
 | `--plugin-version REF` | Set only the plugin version. Supports tag, branch, or commit |
 | `--openviking-version VER` | Set only the PyPI OpenViking version |

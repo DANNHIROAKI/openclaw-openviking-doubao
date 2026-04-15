@@ -1,10 +1,10 @@
 This bundle packages the OpenViking OpenClaw plugin example from:
-  volcengine/OpenViking tag v0.3.6
+  volcengine/OpenViking tag v0.3.8
   path: examples/openclaw-plugin/
 
 Upstream licensing relevant to this bundle:
 - OpenViking examples/ are Apache License 2.0.
-- OpenViking main runtime distributed on PyPI (installed by the scripts as `openviking==0.3.6`) is AGPL-3.0.
+- OpenViking main runtime distributed on PyPI (installed by the scripts as `openviking==0.3.8`) is AGPL-3.0.
 - OpenClaw itself is MIT licensed.
 
 Local modifications in this bundle:

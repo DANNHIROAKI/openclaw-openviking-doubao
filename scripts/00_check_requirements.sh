@@ -19,7 +19,7 @@ Expected baseline:
 - Python >= 3.10
 - Node >= 22.16 (Node 24 recommended by OpenClaw)
 - OpenClaw CLI installed
-- Later tutorial pins npm install to openclaw@2026.4.12
+- Later tutorial pins npm install to openclaw@2026.4.14
 
 If "openclaw --version" failed, run:
   bash scripts/10_install_openclaw_stable.sh

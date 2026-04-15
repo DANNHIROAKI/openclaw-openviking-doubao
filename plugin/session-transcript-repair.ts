@@ -6,8 +6,8 @@
  * with import from local tool-call-id.ts to avoid the external dependency.
  */
 
-import type { AgentMessage } from "./tool-call-id";
-import { extractToolCallsFromAssistant, extractToolResultId } from "./tool-call-id";
+import type { AgentMessage } from "./tool-call-id.js";
+import { extractToolCallsFromAssistant, extractToolResultId } from "./tool-call-id.js";
 
 const TOOL_CALL_NAME_MAX_CHARS = 64;
 const TOOL_CALL_NAME_RE = /^[A-Za-z0-9_-]+$/;

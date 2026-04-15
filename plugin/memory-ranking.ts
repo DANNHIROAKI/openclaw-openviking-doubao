@@ -1,4 +1,4 @@
-import type { FindResultItem } from "./client";
+import type { FindResultItem } from "./client.js";
 
 export function clampScore(value: number | undefined): number {
   if (typeof value !== "number" || Number.isNaN(value)) {

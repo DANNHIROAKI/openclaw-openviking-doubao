@@ -2,9 +2,9 @@ import { spawn } from "node:child_process";
 import { tmpdir } from "node:os";
 
 import { Type } from "@sinclair/typebox";
-import { memoryOpenVikingConfigSchema } from "./config";
+import { memoryOpenVikingConfigSchema } from "./config.js";
 
-import { OpenVikingClient, localClientCache, localClientPendingPromises, isMemoryUri } from "./client";
+import { OpenVikingClient, localClientCache, localClientPendingPromises, isMemoryUri } from "./client.js";
 import type {
   AddResourceInput,
   AddResourceResult,
@@ -15,8 +15,8 @@ import type {
   PendingClientEntry,
   CommitSessionResult,
   OVMessage,
-} from "./client";
-import { formatMessageFaithful } from "./context-engine";
+} from "./client.js";
+import { formatMessageFaithful } from "./context-engine.js";
 import {
   compileSessionPatterns,
   isTranscriptLikeIngest,
@@ -24,7 +24,7 @@ import {
   sanitizeUserTextForCapture,
   shouldBypassSession,
   extractNewTurnMessages,
-} from "./text-utils";
+} from "./text-utils.js";
 import {
   clampScore,
   postProcessMemories,
@@ -32,7 +32,7 @@ import {
   toJsonLog,
   summarizeInjectionMemories,
   pickMemoriesForInjection,
-} from "./memory-ranking";
+} from "./memory-ranking.js";
 import {
   IS_WIN,
   waitForHealthOrExit,
@@ -41,12 +41,12 @@ import {
   withTimeout,
   resolvePythonCommand,
   prepareLocalPort,
-} from "./process-manager";
+} from "./process-manager.js";
 import {
   createMemoryOpenVikingContextEngine,
   openClawSessionToOvStorageId,
-} from "./context-engine";
-import type { ContextEngineWithCommit } from "./context-engine";
+} from "./context-engine.js";
+import type { ContextEngineWithCommit } from "./context-engine.js";
 
 type PluginLogger = {
   debug?: (message: string) => void;

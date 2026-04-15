@@ -7,12 +7,12 @@ PROVIDER="openai"
 REWRITE_CONFIG=0
 SKIP_RESTART=0
 INSTALL_OPENCLAW=0
-OPENCLAW_VERSION="2026.4.12"
+OPENCLAW_VERSION="2026.4.14"
 PORT=1933
 AGENT_ID="default"
 OV_HOME="${HOME}/.openviking"
 OC_HOME="${HOME}/.openclaw"
-OV_VERSION="0.3.6"
+OV_VERSION="0.3.8"
 
 usage() {
   cat <<USAGE
@@ -23,8 +23,8 @@ Options:
   --provider <openai|doubao|gemini-openai>  Select ov.conf template (default: openai)
   --rewrite-config                          Overwrite ~/.openviking/ov.conf with template
   --skip-restart                            Do not restart OpenClaw gateway at the end
-  --install-openclaw                        Run: npm install -g openclaw@2026.4.12
-  --openclaw-version <ver>                  Override pinned npm version (default: 2026.4.12)
+  --install-openclaw                        Run: npm install -g openclaw@2026.4.14
+  --openclaw-version <ver>                  Override pinned npm version (default: 2026.4.14)
   --port <number>                           OpenViking local port (default: 1933)
   --agent-id <value>                        Plugin agentId (default: default)
   -h, --help                                Show this help

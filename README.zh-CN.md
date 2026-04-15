@@ -6,8 +6,8 @@
 
 - 豆包 / 火山方舟 API
 - Local Mode
-- OpenViking `0.3.6`
-- OpenClaw npm 稳定版 `2026.4.12`
+- OpenViking `0.3.8`
+- OpenClaw npm 稳定版 `2026.4.14`
 
 来安装。
 

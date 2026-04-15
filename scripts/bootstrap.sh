@@ -29,7 +29,7 @@ EOF
 
 # 1) 安装 OpenClaw（本地前缀，避免系统 Node / nvm 混乱）
 curl -fsSL --proto '=https' --tlsv1.2 https://openclaw.ai/install-cli.sh | \
-  bash -s -- --prefix "$OPENCLAW_PREFIX" --version 2026.4.12
+  bash -s -- --prefix "$OPENCLAW_PREFIX" --version 2026.4.14
 
 export PATH="$OPENCLAW_PREFIX/bin:$PATH"
 export VOLCANO_ENGINE_API_KEY
@@ -48,7 +48,7 @@ openclaw onboard --non-interactive \
 # 3) 安装 OpenViking runtime
 python3 -m venv "$OPENVIKING_HOME/.venv"
 "$OPENVIKING_HOME/.venv/bin/pip" install -U pip setuptools wheel
-"$OPENVIKING_HOME/.venv/bin/pip" install "openviking==0.3.6"
+"$OPENVIKING_HOME/.venv/bin/pip" install "openviking==0.3.8"
 
 # 4) 生成 Local Mode 的 ov.conf
 cat > "$OPENVIKING_HOME/ov.conf" <<EOF
